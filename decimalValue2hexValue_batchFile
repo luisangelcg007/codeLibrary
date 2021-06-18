@@ -1,0 +1,21 @@
+rem this code will convert from decimal value to hexadecimal value
+rem in this example the code will convert 65 decimal value to 41->0x41
+set LOOKUP=0123456789abcdef
+set HEXSTR=
+set PREFIX=
+
+set /a A=65 || exit /b 1
+if !A! LSS 0 set /a A=0xfffffff + !A! + 1 & set PREFIX=f
+:loop
+set /a B=!A! %% 16 & set /a A=!A! / 16
+set HEXSTR=!LOOKUP:~%B%,1!%HEXSTR%
+if %A% GTR 0 Goto :loop
+set "hexValue=%PREFIX%%HEXSTR%"
+echo !hexValue!
+
+:: End of :ConvertDecToHex function
+:: set return code
+endlocal & set errorlevel=%code%
+
+endlocal
+pause
