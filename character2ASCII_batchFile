@@ -1,5 +1,8 @@
 rem This code convert character to ascii decimal value
 rem example; input = A, output = 65
+rem The character set supported are from ASCII 32 to 126 however, there are some special characters not supported 
+rem because they are reserved. These are space (32), !, |, < and >.
+
 set input=A
 set target=%input:~0,1%
  
