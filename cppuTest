@@ -1,0 +1,9 @@
+Instalar CPPUTEST en WIndows:
+https://apmcgregor.com/index.php/2020/05/12/installing-cpputest-on-windows-10/  
+
+Instalar CYGWIN:
+Importante: instalar Devel category packages al instalar CYGWIN
+https://vidatecno.net/como-instalar-y-configurar-cygwin-en-un-entorno-windows/
+
+Manual cpputest:
+https://cpputest.github.io/manual.html
